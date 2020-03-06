@@ -6,15 +6,11 @@ on:
       - '*'
     tags-ignore:
       - '*'
-    paths:
-      - 'src/**'
   pull_request:
     branches:
       - '*'
     tags-ignore:
       - '*'
-    paths:
-      - 'src/**'
 
 jobs:
   build:
