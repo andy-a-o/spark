@@ -7,14 +7,14 @@ on:
     tags-ignore:
       - '*'
     paths:
-      - 'src/*'
+      - 'src/**'
   pull_request:
     branches:
       - '*'
     tags-ignore:
       - '*'
     paths:
-      - 'src/*'
+      - 'src/**'
 
 jobs:
   build:
