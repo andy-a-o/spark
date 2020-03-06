@@ -8,6 +8,7 @@ WORKDIR /src
 COPY ["./src/Spark.Web/", "Spark.Web/"]
 COPY ["./src/Spark.Engine/", "Spark.Engine/"]
 COPY ["./src/Spark.Mongo/", "Spark.Mongo/"]
+COPY ["./src/Spark/Examples", "Spark/Examples"]
 RUN dotnet restore "/src/Spark.Web/Spark.Web.csproj"
 COPY . .
 RUN dotnet build "/src/Spark.Web/Spark.Web.csproj" -c Release -o /app
